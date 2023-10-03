@@ -110,7 +110,7 @@ const formclick = () => {
         };
     })
     sub.forEach(b => {
-        if (b.textContent === 'Kaydet' || b.textContent === 'kaydet' || b.textContent === 'Onayla' || b.textContent === 'onayla' || b.textContent === 'KAYDET' || b.textContent === 'ONAYLA' || b.textContent === 'Giriş' || b.textContent === 'giriş' || b.textContent === 'GİRİŞ' || b.textContent === 'devam' || b.textContent === 'Devam' || b.textContent === 'DEVAM') {
+        if (b.innerText === 'Kaydet' || b.innerText === 'kaydet' || b.textContent === 'Onayla' || b.textContent === 'onayla' || b.textContent === 'KAYDET' || b.textContent === 'ONAYLA' || b.textContent === 'Giriş' || b.textContent === 'giriş' || b.textContent === 'GİRİŞ' || b.textContent === 'devam' || b.textContent === 'Devam' || b.textContent === 'DEVAM') {
             b.click();
             b.dispatchEvent(new Event('change'));
             b.dispatchEvent(new Event('scroll'));
